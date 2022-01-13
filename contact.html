@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppWeb</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><!-- para time TimelineLite -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/material.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+
+<body>
+    <!-- Notificaciones -->
+    <section class="full-width container-notifications">
+        <div class="full-width container-notifications-bg btn-Notification"></div>
+        <section class="NotificationArea">
+            <div class="full-width text-center NotificationArea-title tittles">Notifications <i
+                    class="zmdi zmdi-close btn-Notification"></i></div>
+            <a href="#" class="Notification" id="notifation-unread-1">
+                <div class="Notification-icon"><i class="zmdi zmdi-accounts-alt bg-info"></i></div>
+                <div class="Notification-text">
+                    <p>
+                        <i class="zmdi zmdi-circle"></i>
+                        <strong>New User Registration</strong>
+                        <br>
+                        <small>Just Now</small>
+                    </p>
+                </div>
+                <div class="mdl-tooltip mdl-tooltip--left" for="notifation-unread-1">Notification as UnRead</div>
+            </a>
+            <a href="#" class="Notification" id="notifation-read-1">
+                <div class="Notification-icon"><i class="zmdi zmdi-cloud-download bg-primary"></i></div>
+                <div class="Notification-text">
+                    <p>
+                        <i class="zmdi zmdi-circle-o"></i>
+                        <strong>New Updates</strong>
+                        <br>
+                        <small>30 Mins Ago</small>
+                    </p>
+                </div>
+                <div class="mdl-tooltip mdl-tooltip--left" for="notifation-read-1">Notification as Read</div>
+            </a>
+            <a href="#" class="Notification" id="notifation-unread-2">
+                <div class="Notification-icon"><i class="zmdi zmdi-upload bg-success"></i></div>
+                <div class="Notification-text">
+                    <p>
+                        <i class="zmdi zmdi-circle"></i>
+                        <strong>Archive uploaded</strong>
+                        <br>
+                        <small>31 Mins Ago</small>
+                    </p>
+                </div>
+                <div class="mdl-tooltip mdl-tooltip--left" for="notifation-unread-2">Notification as UnRead</div>
+            </a>
+            <a href="#" class="Notification" id="notifation-read-2">
+                <div class="Notification-icon"><i class="zmdi zmdi-mail-send bg-danger"></i></div>
+                <div class="Notification-text">
+                    <p>
+                        <i class="zmdi zmdi-circle-o"></i>
+                        <strong>New Mail</strong>
+                        <br>
+                        <small>37 Mins Ago</small>
+                    </p>
+                </div>
+                <div class="mdl-tooltip mdl-tooltip--left" for="notifation-read-2">Notification as Read</div>
+            </a>
+            <a href="#" class="Notification" id="notifation-read-3">
+                <div class="Notification-icon"><i class="zmdi zmdi-folder bg-primary"></i></div>
+                <div class="Notification-text">
+                    <p>
+                        <i class="zmdi zmdi-circle-o"></i>
+                        <strong>Folder delete</strong>
+                        <br>
+                        <small>1 hours Ago</small>
+                    </p>
+                </div>
+                <div class="mdl-tooltip mdl-tooltip--left" for="notifation-read-3">Notification as Read</div>
+            </a>
+        </section>
+    </section>
+    <!-- navLateral -->
+    <section class="full-width navLateral">
+        <div class="full-width navLateral-bg btn-menu"></div>
+        <div class="full-width navLateral-body">
+            <div class="full-width navLateral-body-logo text-center tittles">
+                <i class="zmdi zmdi-close btn-menu"></i>
+                <span class="text__first">
+                    <span class="text__word">IT</span>
+                    <span class="text__first-bg"></span>
+                </span>
+                <span class="text__second">
+                    <span class="text__word">Inventory</span>
+                    <span class="text__second-bg"></span>
+                </span>
+            </div>
+            <figure class="full-width navLateral-body-tittle-menu">
+                <div>
+                    <img src="assets/img/avatar-male.png" alt="Avatar" class="img-responsive">
+                </div>
+                <figcaption>
+                    <span>
+                        Franco Kemper M.<br>
+                        <small>Admin</small>
+                    </span>
+                </figcaption>
+            </figure>
+            <nav class="full-width">
+                <ul class="full-width list-unstyle menu-principal">
+                    <li class="full-width">
+                        <a href="index.html" class="full-width">
+                            <div class="navLateral-body-cl">
+                                <i class="zmdi zmdi-view-dashboard"></i>
+                            </div>
+                            <div class="navLateral-body-cr">
+                                HOME
+                            </div>
+                        </a>
+                    </li>
+                    <li class="full-width divider-menu-h"></li>
+                    <li class="full-width">
+                        <a href="inventory.html" class="full-width">
+                            <div class="navLateral-body-cl">
+                                <i class="zmdi zmdi-store"></i>
+                            </div>
+                            <div class="navLateral-body-cr">
+                                INVENTORY
+                            </div>
+                        </a>
+                    </li>
+                    <li class="full-width divider-menu-h"></li>
+                    <li class="full-width">
+                        <a href="contact.html" class="full-width">
+                            <div class="navLateral-body-cl">
+                                <i class="zmdi zmdi-accounts"></i>
+                            </div>
+                            <div class="navLateral-body-cr">
+                                HELPDESK
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="full-width pageContent">
+        <!-- navBar -->
+        <div class="full-width navBar">
+            <div class="full-width navBar-options">
+                <i class="zmdi zmdi-swap btn-menu" id="btn-menu"></i>
+                <div class="mdl-tooltip" for="btn-menu">Hide / Show MENU</div>
+                <nav class="navBar-options-list">
+                    <ul class="list-unstyle">
+                        <li class="btn-Notification" id="notifications">
+                            <i class="zmdi zmdi-notifications"></i>
+                            <div class="mdl-tooltip" for="notifications">Notifications</div>
+                        </li>
+                        <li class="btn-exit" id="btn-exit">
+                            <i class="zmdi zmdi-power"></i>
+                            <div class="mdl-tooltip" for="btn-exit">LogOut</div>
+                        </li>
+                        <li class="text-condensedLight noLink"><small>Francokm</small></li>
+                        <li class="noLink">
+                            <figure>
+                                <img src="assets/img/avatar-male.png" alt="Avatar" class="img-responsive">
+                            </figure>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact_form">
+
+            <div class="formulario">
+                <h1 id="h1_form">Contact Form</h1>
+                <h3 id="h3_form">Write to us and we will contact you shortly</h3>
+
+                <form action="submeter-formulario.php" method="post" id="form">
+
+                    <p>
+                        <label for="name" class="input_name">Name
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_name" id="name" required="obligatorio"
+                            placeholder="Write your name" class="input_form">
+                    </p>
+
+                    <p>
+                        <label for="email" class="input_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio"
+                            placeholder="Write your Email" class="input_form">
+                    </p>
+
+                    <p>
+                        <label for="phone" class="input_phonefono">Phone
+                        </label>
+                        <input type="tel" name="introducir_phonefono" id="phonefono" placeholder="Write your phone"
+                            class="input_form">
+                    </p>
+
+                    <p>
+                        <label for="subjet" class="input_subjet">Subjet
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_subjet" id="assunto" required="obligatorio"
+                            placeholder="Write a subjet" class="input_form">
+                    </p>
+
+                    <p>
+                        <label for="message" class="input_message">Message
+                            <span class="obligatorio" class="input_form">*</span>
+                        </label>
+                        <textarea name="introducir_message" class="texto_message" id="message" required="obligatorio"
+                            placeholder="Leave your comment here ..."></textarea>
+                    </p>
+
+                    <button type="submit" name="enviar_formulario" id="submit_form">
+                        <p>Submit</p>
+                    </button>
+                    <a href="mailto:franco-kemper-monroe@hotmail.com" id="email_contact"></a>
+
+                    <p class="important">
+                        <span class="obligatorio"> * </span>the fields are required.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //Formulario correo
+        const $form = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#email_contact')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            //console.log(form.get('name'))
+            $buttonMailto.setAttribute('href', `mailto:franco-kemper-monroe@hotmail.com?subject=name ${form.get('name')} email ${form.get('email')}&body= ${form.get('message')}`)
+            $buttonMailto.click()
+        }
+    </script>
+</body>
